@@ -1,46 +1,84 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html>
-    <head>
+	<head>
+		<!-- comenta, v head su meta data -->
 
-    </head>
-    <body>
-        <header id="header">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">contact</a>
-                <a href="https://www.w3schools.com/html/">W3Schools</a>
-            </nav>
-        </header>
-        <main>
-            <div id="main-title">
-                <h1>Hello World</h1>
-                <h3>Hello World</h3>
-                <h6>Hello World</h6>
-            </div>
-            <div id="content">
-                <p>Obyčejný </p>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<style>
+			nav {
+				border-style: solid;
+				border-width: 2px;
+				border-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<nav style="border-color: black">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="https://www.w3schools.com/html/html_xhtml.asp">W3Schools</a>
+			</nav>
+		</header>
+		<main>
+			<div id="main-title">
+				<h1 class="borders second">Hello World!</h1>
+				<h3>Hello World!</h3>
+				<h6>Hello World!</h6>
+			</div>
+			<div id="content">
+				<p class="borders">obyc text</p>
 
-                <article> article
-                    <section>
-                        Section1
-                    </section>
-                </article>
-            </div>
-            <div></div>
-        </main>
-            <aside>
-                <ul>
-                    <li>Item1</li>
-                    <li>Item2</li>
-                    <li>Item3</li>
-                </ul>
-            </aside>
-            <footer>
-                <span>footer</span>
-            </footer>
+				<img src="images/book.png" alt="book" width="200px">
+				<img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest/scale-to-width-down/1200?cb=20190914165726&path-prefix=cs" alt="ironman-Tony-Stark" height="300px" width="350px">
 
-        
-    </body>
+				<article>
+					Article
+					<section>
+						Section1
+					</section>
+				</article>
+			</div>
 
+
+			<form method="post" action="about.html">
+				<label for="login">Login</label>
+				<input type="text" name="login" value="TVOJE MENO"><br>
+				<input type="password" name="password">
+				<input type="range">
+				<input type="submit" value="Send To">
+			</form>
+			<table style="border-style: solid;">
+  				<tr style="border-style: solid;" height="40px">
+    				<th style="border-style: solid;">Company</th>
+    				<th style="border-style: solid;">Contact</th>
+    				<th style="border-style: solid;">Country</th>
+  				</tr>
+  				<tr style="border-style: solid;">
+    				<td>Alfreds Futterkiste</td>
+    				<td>Maria Anders</td>
+    				<td>Germany</td>
+  				</tr>
+  				<tr>
+    				<td>Centro comercial Moctezuma</td>
+    				<td>Francisco Chang</td>
+    				<td>Mexico</td>
+  				</tr>
+			</table>
+		</main>
+		<aside>
+			<ul>
+				<li>Item1</li>
+				<li>Item2</li>
+				<li>Item3</li>
+			</ul>
+		</aside>
+		<footer>
+			<nav class="footer">
+				ahoj som nav
+			</nav>
+			<span>footer</span>
+		</footer>
+	</body>
 </html>
